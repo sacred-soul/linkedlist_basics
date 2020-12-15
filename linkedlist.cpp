@@ -1,33 +1,32 @@
 #include<iostream>
 using namespace std;
+
+//Structure for Node of Linkedlist
 typedef struct node
 {
     int data;
     struct node *next;
 }node_t;
+
 node_t *head=NULL;
+
+//Function for inserting a node to end of list
 void insert(int n)
 {
     node_t *p=new node_t;
     p->data=n;
     p->next=NULL;
     if(head==NULL)
-    {
-        p->data=n;
-        p->next=NULL;
         head=p;
-    }
     else
     {
         node_t *t=head;
         while(t->next!=NULL)
-        {
             t=t->next;
-        }
-    t->next=p;
+        t->next=p;
     }
-
 }
+
 int length()
 {
     if (head==NULL)

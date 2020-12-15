@@ -105,7 +105,7 @@ void makecircular()
     t->next=head;
 }
 
-
+//Function to remove a node from any posistion of linkedlist
 void removenode(int pos)
 {
     int count=length();
@@ -135,6 +135,8 @@ void removenode(int pos)
         delete(t);
     }
 }
+
+//Function to print elements of linkedlist
 void disp()
 {
     node_t *t;
@@ -149,6 +151,8 @@ void disp()
         t=t->next;
     }
 }
+
+//Function to reverse a linkedlist
 void reverse()
 {
     node_t *t=head;
@@ -163,6 +167,8 @@ void reverse()
         t=nextnode;
     }
 }
+
+//Function to free the heap after our purpose  (Memory management is important guys !)
 void freemem()
 {
     node_t *t1=head->next,*t=head;
@@ -174,6 +180,7 @@ void freemem()
     }
     delete(head);
 }
+
 int main()
 {
     int arr[]={1,0,2,4};

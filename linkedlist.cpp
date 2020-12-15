@@ -49,7 +49,7 @@ void arr_linkedlist(int arr[], int n)
         insert(arr[i]);
 }
 
-//Function to insert node at a gven posistion
+//Function to insert a node at given posistion
 void insertpos(int n, int pos)
 {
     int count=length();
@@ -78,6 +78,8 @@ void insertpos(int n, int pos)
         t->next=p;
     }
 }
+
+//Function to check Linkedlist is circular or not
 int iscircular()
 {
     node_t *t1=head->next;
@@ -93,6 +95,8 @@ int iscircular()
         return 0;
     }
 }
+
+//Function to convert linear Linkedlist to circular one
 void makecircular()
 {
     node_t *t=head;
@@ -100,6 +104,7 @@ void makecircular()
         t=t->next;
     t->next=head;
 }
+
 
 void removenode(int pos)
 {

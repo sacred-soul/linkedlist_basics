@@ -16,7 +16,7 @@ void insert(int n)
     node_t *p=new node_t;
     p->data=n;
     p->next=NULL;
-    if(head==NULL)
+    if(head==NULL) 
         head=p;
     else
     {
@@ -27,6 +27,7 @@ void insert(int n)
     }
 }
 
+//Function to find length of List
 int length()
 {
     if (head==NULL)
@@ -40,12 +41,15 @@ int length()
     }
     return count;
 }
+
+//Function to convert array to Linkedlist (using Insert function)
 void arr_linkedlist(int arr[], int n)
 {
     for(int i=0;i<n;i++)
         insert(arr[i]);
 }
 
+//Function to insert node at a gven posistion
 void insertpos(int n, int pos)
 {
     int count=length();

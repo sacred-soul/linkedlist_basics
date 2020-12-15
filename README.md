@@ -1,6 +1,6 @@
 # Linkedlist Basics 101
 
-Some basic funtions like 
+Some basic funtions used in the program are given below.
 * Insertion
 * Deletion
 * Array to linkedlist
@@ -9,4 +9,7 @@ Some basic funtions like
 * Circular checking
 * Making linear
 * Circular
-* and Display are implemented using linkedlist.
+* Reverse
+* Display
+* Free the heap memory ( Memory Management is also important ;P )
+
